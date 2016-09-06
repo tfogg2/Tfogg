@@ -172,7 +172,7 @@ body{
 	
 }
 .about_img1{
-	background-image: url("sushi.jpg");
+	background-image: url('<%= asset_path("sushi.jpg) %> ');
 	opacity: .85;
 	height: 1000px;
 }
