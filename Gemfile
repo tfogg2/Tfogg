@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 group :production do
 	# Use Postgres as the database for Active Record
 	gem 'pg'
-	gem 'rails_12factor'
+	gem 'rails_12factor', group: :production
 end
 
 group :test, :development do
