@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tfogg</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  
+	  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Dancing+Script|Yellowtail|Alfa+Slab+One|Oleo+Script|Great+Vibes' 
+	  rel='stylesheet' type='text/css'>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="topbar navbar-fixed-top">
+		<nav class="left col-md-4">
+			<div class="logo" ><%= link_to "Thomas Fogg", root_path %> </div>
+		</nav>
+
+		<nav class="middle col-md-4">
+			<div class="links ">
+				<ul class="list-inline">
+				<li><%= link_to "About", about_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
+				<li><%= link_to "School", school_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %> </li>
+				<li><%= link_to "Work", work_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
+				<li><%= link_to "Adventures", adventure_path, :style => "opacity:0.5; filter:alpha(opacity=50);"%></li> 
+ 
+				</ul>
+			</div>
+			
+			
+		</nav>
+
+		<nav class="right col-md-4">
+			<div class="email"><%= mail_to "thomas@tfogg.com", "Thomas@tfogg.com"  %> </div>
+		</nav>
+	</div>
+
+		<div class="context">
+			<%= yield %>
+		</div>
+
+	<div id= "about">
+
+	</div>
+
+	<footer>
+		<sub>©Thomas Fogg inc.</sub>
+	</footer>
+	<script   src="http://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+</body>
+</html>
