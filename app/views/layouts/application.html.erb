@@ -3,48 +3,63 @@
 <head>
   <title>Tfogg</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
-	  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Dancing+Script|Yellowtail|Alfa+Slab+One|Oleo+Script|Great+Vibes' 
-	  rel='stylesheet' type='text/css'>
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100i,400" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,600i" rel="stylesheet">
+	  <script src="https://use.typekit.net/rih4gxo.js"></script>
+	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="topbar navbar-fixed-top">
-		<nav class="left col-md-4">
-			<div class="logo" ><%= link_to "Thomas Fogg", root_path %> </div>
-		</nav>
-
+<!-- 	<div class="topbar navbar-fixed-top"> -->
+<!-- 		<nav class="left col-md-4"> -->
+			<!-- <div class="logo" > --> <!-- </div> -->
+<!-- 		</nav> -->
+<!-- 
 		<nav class="middle col-md-4">
 			<div class="links ">
-				<ul class="list-inline">
-				<li><%= link_to "About", about_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
-				<li><%= link_to "School", school_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %> </li>
-				<li><%= link_to "Work", work_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
-				<li><%= link_to "Adventures", adventure_path, :style => "opacity:0.5; filter:alpha(opacity=50);"%></li> 
+				<ul class="list-inline"> -->
+<!-- 				<li><%# link_to "About", about_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
+				<li><%# link_to "School", school_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %> </li>
+				<li><%# link_to "Work", work_path, :style => "opacity:0.5; filter:alpha(opacity=50);" %></li> 
+				<li><%# link_to "Adventures", adventure_path, :style => "opacity:0.5; filter:alpha(opacity=50);"%></li> 
  
 				</ul>
 			</div>
 			
 			
-		</nav>
-
-		<nav class="right col-md-4">
-			<div class="email"><%= mail_to "thomas@tfogg.com", "Thomas@tfogg.com"  %> </div>
-		</nav>
+		</nav> -->
+	<div id="top-bar">
+		<ul id="nav">
+				<%= link_to root_path( :anchor => "about") do %>
+					<li class="menu-item"><%= image_tag("about.png") %></li>
+				<%- end %>
+				<%= link_to root_path( :anchor => "portfolio") do %>
+					<li class="menu-item"><%= image_tag("portfolio.png") %></li>
+				<%- end %>
+				<%= link_to root_path( :anchor => "resume") do %>
+					<li class="menu-item"><%= image_tag("resume.png") %></li>
+				<%- end %>
+				<%= link_to root_path( :anchor => "contact") do %>
+					<li class="menu-item"><%= image_tag("contact.png") %></li>
+				<%- end %>
+		</ul>
 	</div>
+		
+<!-- 	</div> -->
 
-		<div class="context">
-			<%= yield %>
-		</div>
+	<%= yield %>
 
-	<div id= "about">
 
-	</div>
+<!-- 	<div id= "about">
 
+	</div> -->
+<!-- 
 	<footer>
 		<sub>©Thomas Fogg inc.</sub>
-	</footer>
+	</footer> -->
 	<script   src="http://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 

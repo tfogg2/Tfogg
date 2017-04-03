@@ -1,8 +1,228 @@
 body{
-	
+	top:0;
+}
+#top-bar{
+	width: 100%;
+	height: 60px;
+	background: #111;
+	position: fixed;
+}
+#nav{
+	position: relative;
+	width: 340px;
+	height: 60px;
+	list-style: none;
+	text-align: center;
+	background: #111;
+	margin: 0 auto;
+    overflow: hidden;
+}
+.menu-item{
+	float:left;
+	display:block;
+	width: 70px;
+	height: 60px;
+	padding-top: 18px;
+}
+.menu-item:hover{
+	background: #df4244;
+}
+.home{
+	background: url('bg.png') no-repeat; 
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 15% 0%;
+   /* z-index:-1;  Remove this line if it's not going to be a background! */
+}
+.home h1 a{
+	font-size: 200%;
+	color: white;
+	font-family: ‘Helvetica Neue’, Helvetica; 
+	font-weight: 100;
+}
+.name_container{
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	background: black;
+	background-color: rgba(0,0,0,0.6);
+/*	border-radius: 30px;*/
+	line-height: 2;
+	margin-bottom: 80px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+}
+.right{
+	float: right;
+	padding-right: 20px;
+}
+.arrow{
+	height: 82px;
+	width: 80px;
+	background: url('downarrow.png') no-repeat;
+	margin:0px auto;
+
+}
+.description{
+	color: white;
+	width: 420px;
+	margin: 0px auto 40px auto;
+	font-family: arial, Helvetica; 
+	font-weight: 200;
+}
+#about{
+	background: #fff;
 }
 
-/* Topbar  */
+.content{
+	text-align: left;
+	margin: 0 auto;
+	width: 75%;
+	height: 200px;
+	padding-top: 40px;
+}
+.left-column{
+	width: 20%;
+	display: inline-block;
+}
+.center-column{
+	height: 200px;
+	width: 55%;
+	display: inline-block;
+}
+.right-column{
+	width: 20%;
+	display: inline-block;
+}
+
+.selected{
+	background: #df4244;
+}
+#FilterFly {
+	width: 100%;
+	height: 200px;
+	background: #4990E2;
+
+}
+.logo {
+	margin: 0px auto;
+	padding-top: 30px;
+	width: 533px;
+
+}
+.shopify{
+	width: 100%;
+	height: 200px;
+	background: #fff;
+
+}
+.shopifyImg{
+	margin: 0px auto;
+	padding-top: 50px;
+	width: 482px;
+
+}
+#cofc{
+	width: 100%;
+	height: 200px;
+	background: #8C0C04;
+
+}
+.cofcImg{
+	color: white;
+	text-align: center; 
+	margin: 0px auto;
+	width: 630px;
+/*	padding-top: 25px;*/
+}
+.cofcImg h1{
+	font-family: 'Open Sans', sans-serif, 300, italic; /*caslon pro ;*/
+	margin-top: 20px;
+	font-size: 40px;
+
+}
+.cofcImg h3{
+	margin: 10px 0 0 0;
+	font-weight: 100;
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif, 300, italic;
+
+}
+#skills{
+	color: black;
+	height: 300px;
+	width: 100%;
+	background: #fff;
+	padding-top: 40px;
+	
+}
+#list{
+	width: 600px;
+	margin: 0 auto;
+	height: 200px;
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.9);
+	padding-left: 70px;
+	padding-top: 15px;
+}
+#skills p{
+	color: black;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 30px;
+
+}
+#skills table{
+	height: 160px;
+	list-style: none;
+	float: left;
+	width: 250px;
+
+}
+.rightTbl{
+	margin-left: 30px;
+}
+
+
+/*#lower{
+	background: url('lower.png') no-repeat;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position:relative;
+	width: 100%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Topbar  
 .topbar{
 	height:120px;
 	background: white;
@@ -21,7 +241,7 @@ body{
 }
 .logo a{
 	font-family: 'Open Sans', sans-serif;
-	/* font-family: 'Yellowtail', cursive; */
+	/* font-family: 'Yellowtail', cursive; 
 	text-decoration: none;
 	color: #383A3B;
 	font-size: 17px;
@@ -68,19 +288,16 @@ body{
 }
 }
 
-/* Topbar */
 
-
-/* Home */
 .home{
-	font-family: 'Yellowtail', cursive;
+
 
 }
 .home a{
 	text-decoration: none;
 }
 .box{
-	background: url('/assets/images/code.png'); /*! #565656 !*/
+	background: url('code.png'); 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -88,7 +305,7 @@ body{
 	height: 250px;
 	border-top: white 4px;
 	margin: 20px auto;
-	box-shadow: inset 0px 5px 8px  #000;/*! #424242 !*/
+	box-shadow: inset 0px 5px 8px  #000;
 }
 .box h2 b{
 	color:#e24e42;
@@ -151,13 +368,7 @@ body{
 	text-decoration: none;
 	color: #a9a9a9;
 }
-/* Home */
 
-
-
-
-
-/* About */
 .parapic{
 	
 	background-image: url("IMG_1091.jpg");
@@ -172,7 +383,7 @@ body{
 	
 }
 .about_img1{
-	background-image: url('<%= asset_path("sushi.jpg) %> ');
+	background-image: url("sushi.jpg") ;
 	opacity: .85;
 	height: 1000px;
 }
@@ -200,20 +411,19 @@ body{
 	font-size: 80px;
 }
 
-/* About */
 
+.context{
+	height: 100%;
+	width: 100%;
+}
 
-
-
-
-/* Adventures Page */
 .context ul {
 	list-style:none;
 	margin: 0 auto;
 	padding: 0;
 	display: block;
-	max-width: 780px;
-	text-align: center;
+	max-width: 1000px;
+
 }
 .context ul li {
 	display: inline-block;
@@ -223,8 +433,8 @@ body{
 }
 .context ul li img {
 	display: block;
-	width: 100px;
-	height: 75px;
+	width: 280px;
+	height: 220px;
 }
 
 #overlay{
@@ -252,3 +462,44 @@ footer{
 	margin-top: 40px;
 }
 /* Footer */
+
+
+
+
+
+
+/* Filter-Fly */
+
+/*#filter {
+	min-height: 300px;
+	width:80%;
+	margin:40px auto;
+}
+
+.filterInput{
+	float:right;
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
