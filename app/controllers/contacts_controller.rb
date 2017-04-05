@@ -1,19 +1,25 @@
 class ContactsController < ApplicationController
 	def new
 		@contact = Contact.new
+		if 
+    		Contact.new(params[:contact]).deliver
+    		redirect_to '/contacts/thanks', :alert => ["Yeah!"]
+   		else
+
+   		end
 	end 
 
 	def create
 	    @contact = Contact.new(params[:contact])
 	    @contact.request = request
-
-	      if @contact.deliver
+	      if @contact.valid?
+	      	@contact.deliver
 	      	redirect_to '/'
 	      	flash.now[:notice] = 'Thank you for your message!'
 	      else
 	      	flash.now[:error] = 'Cannot send message.'
 	      	render :new
-	   	   end
+	   	  end
 	end
 
 	def contact_params
