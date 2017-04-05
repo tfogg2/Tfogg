@@ -37,13 +37,16 @@ Tfogg::Application.configure do
   config.assets.raise_runtime_errors = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default :charset => "utf-8"
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'example.com',
-    user_name:            '<username>',
-    password:             '<password>',
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+
+  # {
+  #   address:              'smtp.gmail.com',
+  #   port:                 587,
+  #   domain:               'example.com',
+  #   user_name:            '<username>',
+  #   password:             '<password>',
+  #   authentication:       'plain',
+  #   enable_starttls_auto: true  }
 end

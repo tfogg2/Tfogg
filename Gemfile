@@ -27,6 +27,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'mail_form', '~> 1.6.0'
+gem 'sendgrid-ruby'
 
 gem 'mail'
 gem 'postmark'
