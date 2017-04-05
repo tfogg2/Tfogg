@@ -1,9 +1,8 @@
 class ContactsController < ApplicationController
 	def new
 		@contact = Contact.new
-		if 
+		if Contact.new
     		Contact.new(params[:contact]).deliver
-    		redirect_to '/contacts/thanks', :alert => ["Yeah!"]
    		else
 
    		end
