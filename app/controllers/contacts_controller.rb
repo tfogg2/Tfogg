@@ -1,30 +1,22 @@
 class ContactsController < ApplicationController
-	def index
-		@contacts = Contact.all
-	end
-
-	def show
-	end
-
 	def new
 		@contact = Contact.new
 	end 
 
 	def create
-	    @contact = Contact.new(contact_params)
+	    @contact = Contact.new(params[:contact])
+	    @contact.request = request
 
-	    respond_to do |format|
-	      if @contact.save
-	        format.html { redirect_to root_path, notice: 'Message successfully sent.' }
-	        format.json { render :show, status: :created, location: @contact }
+	      if @contact.deliver
+	      	redirect_to '/'
+	      	flash.now[:notice] = 'Thank you for your message!'
 	      else
-	        format.html { render :new }
-	        format.json { render json: @contact.errors, status: :unprocessable_entity }
-	      end
-	    end
+	      	flash.now[:error] = 'Cannot send message.'
+	      	render :new
+	   	   end
 	end
 
 	def contact_params
-      params.require(:contact).permit(:name, :email, :message)
+      params.require(:contact).permit(:message, :to_email, :email, :name)
     end
 end

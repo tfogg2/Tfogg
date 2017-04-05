@@ -7,7 +7,7 @@ body{
 	background: #111;
 	position: fixed;
 }
-#nav{
+#top-menu{
 	position: relative;
 	width: 340px;
 	height: 60px;
@@ -25,7 +25,7 @@ body{
 	padding-top: 18px;
 }
 .menu-item:hover{
-	background: #df4244;
+	background: #4990E2;
 }
 .home{
 	background: url('bg.png') no-repeat; 
@@ -37,18 +37,18 @@ body{
    /* z-index:-1;  Remove this line if it's not going to be a background! */
 }
 .home h1 a{
-	font-size: 200%;
+	font-size: 220%;
 	color: white;
-	font-family: ‘Helvetica Neue’, Helvetica; 
+	/*font-family: ‘Helvetica Neue’, Helvetica; */
 	font-weight: 100;
 }
 .name_container{
-	width: 100%;
+	width: 50%;
 	padding: 20px;
 	margin: 0 auto;
 	background: black;
-	background-color: rgba(0,0,0,0.6);
-/*	border-radius: 30px;*/
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 15px;
 	line-height: 2;
 	margin-bottom: 80px;
 }
@@ -83,19 +83,33 @@ a:hover{
 
 .content{
 	text-align: left;
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 75%;
-	height: 200px;
-	padding-top: 40px;
+	height: 250px;
+	padding-top: 2px;
 }
-.left-column{
+.content h1{
+	text-align: center;
+	font-weight: 100;
+	font-size: 50px;
+	margin-top: 10px;
+}
+.content a{
+	color: #4990E2;
+}
+/*.left-column{
 	width: 20%;
 	display: inline-block;
-}
-.center-column{
+}*/
+/*.left-column{
 	height: 200px;
-	width: 55%;
+	width: 100%;
+
 	display: inline-block;
+}*/
+.center-column{
+	width: 550px;
+	margin: 0 auto;
 }
 .right-column{
 	width: 20%;
@@ -103,7 +117,12 @@ a:hover{
 }
 
 .selected{
-	background: #df4244;
+	background: #4990E2 ;
+/*	#df4244;*/
+}
+.selected li{
+	background: #4990E2 ;
+/*	#df4244;*/
 }
 #FilterFly {
 	width: 100%;
@@ -157,25 +176,26 @@ a:hover{
 }
 #skills{
 	color: black;
-	height: 300px;
+	height: 430px;
 	width: 100%;
 	background: #fff;
-	padding-top: 40px;
+	padding-top: 20px;
 	
 }
 #list{
 	width: 600px;
 	margin: 0 auto;
 	height: 200px;
-	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.9);
+	/*box-shadow: inset 0px 1px 2px rgba(0,0,0,0.9);*/
 	padding-left: 70px;
 	padding-top: 15px;
 }
-#skills p{
+#skills h1{
 	color: black;
 	text-align: center;
-	font-size: 25px;
-	margin-bottom: 30px;
+	font-weight: 100;
+	font-size: 50px;
+	margin-bottom: 10px;
 
 }
 #skills table{
@@ -188,318 +208,139 @@ a:hover{
 .rightTbl{
 	margin-left: 30px;
 }
-
-
-/*#lower{
-	background: url('lower.png') no-repeat;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position:relative;
+.github{
+	height: 31px;
+	width: 162px;
+	margin: 20px auto 0 auto;
+	font-weight: 200;
+}
+#contact{
+	height: 550px;
 	width: 100%;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Topbar  
-.topbar{
-	height:120px;
-	background: white;
-	top:0px;
-	padding-top: 40px;
-	
-}
-
-.left{
-	
-	text-align: center;
-
-}
-.middle{
-
-}
-.logo a{
-	font-family: 'Open Sans', sans-serif;
-	/* font-family: 'Yellowtail', cursive; 
-	text-decoration: none;
-	color: #383A3B;
-	font-size: 17px;
-	
-}
-.links{
-	text-align: center;
-	margin: 0px auto 0px auto;
-	
-}
-.links li{
-	text-decoration: none;
-	list-style-type: none;
-	text-align: center;
-}
-.links a{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	text-decoration: none;
-	color: #383A3B;
-	margin: 0px 25px;
-}
-.right{
-	text-align: center;
-	
-
-}
-.right a{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	text-decoration: none;
-	color: #E88F0C;
-
-}
-
-@media (min-width: 320px) and (max-width: 568px) {
-  .links ul{
-    display:none;
-}
-}
-@media (min-width: 568px) {
-  .links select, #menu button{
-    display: none;
-}
-}
-
-
-.home{
-
-
-}
-.home a{
-	text-decoration: none;
-}
-.box{
-	background: url('code.png'); 
-	background-attachment: fixed;
+	background: #161616;
+	/*url('contactBk.png') no-repeat;
+	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover ;
-	height: 250px;
-	border-top: white 4px;
-	margin: 20px auto;
-	box-shadow: inset 0px 5px 8px  #000;
-}
-.box h2 b{
-	color:#e24e42;
-}
-.pic h3{
-	font-family: 'Open Sans', sans-serif;
+	background-attachment: fixed; */ 
 	text-align: center;
-	text-decoration: none;
-	background-color: #565656;
-  	color: transparent;
- 	text-shadow: 0px 1px 2px rgba(255,255,255,0.5);
-  	-webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text; 
+	color: white;
+	padding-top: 20px;
 }
-.pic img{
-	margin: 40px auto 20px auto;
+#contact h1{
+	font-weight: 100;
+	font-size: 50px;
+}
+#contactForm{
+	width: 520px;
+	margin:0 auto;
+	text-align: left;
+	color: black;
 	display: block;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-	width: 350px;
-	height: 200px;
 }
-.paraimg{
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover ;
-	text-align: center;
-	color:#fff;
-	font-size: 400%;
-	text-shadow: 0px 0px 21px rgba(0, 0, 0, 1);
+#contactForm input{
 
-}
-.paraimg h1{
-	margin-top: 0;
-	color:#fff;
-	font-size: 200%;
-	display: table-cell;
-	vertical-align: middle;
-	text-shadow: 0px 0px 21px rgba(0, 0, 0, 1);
-}
-.content h1{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 65px;
-	text-decoration: none;
-	color: #fff4e8;
-	text-align: center;
-
-	background-color: #565656;
-  	color: transparent;
- 	text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
-  	-webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text; 
-}
-.con h2{
-
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	text-decoration: none;
-	color: #a9a9a9;
-}
-
-.parapic{
-	
-	background-image: url("IMG_1091.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain ;
-	height: 400px;
-	
-}
-.about{
-	
-}
-.about_img1{
-	background-image: url("sushi.jpg") ;
-	opacity: .85;
-	height: 1000px;
-}
-.about_img2{
-	background-image: url("IMG_0086.jpg");
-	height: 1000px;
-}
-.about_img3{
-	background-image: url("IMG_0329.jpg");
-
-	height: 1000px;
-}
-.about_img4{
-	background-image: url("IMG_3628.jpg");
-
-	height: 1000px;
-}
-
-.about_content{
-	min-height: 600px;
-	
-}
-.about_content h1{
-	text-align: center;
-	font-size: 80px;
-}
-
-
-.context{
-	height: 100%;
-	width: 100%;
-}
-
-.context ul {
-	list-style:none;
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-	max-width: 1000px;
-
-}
-.context ul li {
-	display: inline-block;
-	padding: 8px;
-	background:white;
-	margin:10px;
-}
-.context ul li img {
-	display: block;
 	width: 280px;
-	height: 220px;
+	border: none;
+	background: #333;
+	height: 45px;
+	display: inline-block;
+	margin: 10px auto;
+	padding: 10px;
+
 }
-
-#overlay{
-	 background:rgba(0,0,0,.7);
-	 width: 100%;
-	 height:100%;
-	 position: absolute;
-	 top:0;
-	 left: 0;
-	 display:none;
-	 text-align:center;
+#contactForm textarea{
+	width: 280px;
+	border: none;
+	background: #333;
+	min-height: 100px;
+	display: inline-block;
+	margin: 10px auto;
+	padding: 10px;
 }
-#overlay img{
- 	margin-top:20%;
- 	height:500px;
-	width: 600px;
-  
+#contactForm label{
+	display: inline-block;
+	width: 70px;
+	margin-right: 50px;
+	margin-top: 25px;
+	float: left;
+	color: white;
+	opacity: .9;
+	font-weight: 100;
+	letter-spacing: 1.5px;
 }
-/* Adventures Page */
-
-
-/* Footer */
-footer{
-	text-align: center;
-	margin-top: 40px;
+#contactForm abbr{
+	display: none;
 }
-/* Footer */
-
-
-
-
-
-
-/* Filter-Fly */
-
-/*#filter {
-	min-height: 300px;
-	width:80%;
-	margin:40px auto;
+#contactForm .contact_message input{
+	height: 100px;
 }
+#contactForm .contact_message label{
+	margin-top: 45px;
+}
+#contactForm .activeInput input{
+	background: #4990E2;
+	color: white;
+}
+#contactForm .activeInput textarea{
+	background: #4990E2;
+	color: white;
+}
+.submit{
+	height: 45px;
+	width: 100%;
+	margin: 10px auto;
+}
+.submit input{
+	width: 280px;
+	height: 45px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: white;
+	background: #4990E2; 
+	margin: 15px auto;
+	border: none;
+}
+.submit input:hover{
+	background: #fff;
+	color: #4990E2;
 
-.filterInput{
+}
+.input{
+	margin: 15px auto 0 auto;
+
+	display: inline-block;
+}
+#contactLabels{
+	list-style-type: none;
+}
+.contact_message label{
+	margin-top: 10px;
+}
+#footer{
+	background: #111;
+	width: 100%;
+	height: 80px;
+	
+}
+.email-link{
+	margin-top: 30px;
+	float: left;
+	padding-left: 15%;
+}
+.email-link a{
+	color: #666;
+	margin-left: 15%;
+	
+}
+.instagram{
 	float:right;
-
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	margin-right: 15%;
+	margin-top: 20px;
+}
+.instagram img{
+	height: 40px;
+	width: 40px;
+}
 
 
 

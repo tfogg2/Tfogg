@@ -5,123 +5,67 @@
 	<div class="name_container">
 		<h1 class="name"><%= link_to "Thomas Fogg", root_path %></h1>
 		<div id="lower">
-			<p class="description">Business Development - Marketing - Financial Optimization - Graphic Design - Custom Web App Development</p>
+			<p class="description">Web App Development - Graphic Design - Business Strategies - Marketing - Financial Optimization</p>
 			
 		</div>
 	</div>
-	<div class="arrow"></div>
+	
+	<a href="#about"><div class="arrow"></div></a>
+
 
 </div>
 <div id="about">
 	<div class="content">
-		<div class="left-column">
-			<h4>About</h4>
-		</div>
-		<div class="center-column">
-			<p>Vermont-born, I've been passionate about app development since leaving home four years ago. That path led me to the glory that is Ruby on Rails. I find satisfaction in solving problems, the bigger the better. I enjoy solving those problems faster by working with others.</p>
-		</div>
-		<div class="right-column">
-			<p>Right column</p>
-		</div>
+
+		<h1>About</h1>
+			<div class="center-column">
+				<p>While earning a degree in business at the College of Charleston I taught myself how to program, primarily building web apps in Ruby on Rails. I have a business oriented mind and the technical skills to bring ideas to life. I'm a quick study who thrives in a collaborative, creative and team-based environment. I'm currently developing a Shopify app called Filter Fly which will allow online stores to better filter their products and by doing so, create a better experience for their customers. Filter Fly will be sold on the Shopify App store. Feel free to <%= link_to "contact", root_path( :anchor => "contact") %> me for more info.</p>
+			</div>
+
+		<!-- <div class="right-column">
+			<p>Download Resume</p>
+			<p>Print Resume</p>
+		</div> -->
 	</div>
 </div>
 
-<div id="FilterFly">
-	<div class="logo"><%= image_tag('ffLogo.png') %></div>
-</div>
-<div class="shopify">
-	<div class="shopifyImg"><%= image_tag('shopify-partner.png') %></div>
-</div>
-<div id="cofc">
-	<div class="cofcImg"><%= image_tag('CofClogo.png') %>
-		<!-- <H1>COLLEGE of CHARLESTON</H1>
-		<h3>Class of 2017</h3> -->
+<div id="portfolio">
+	<div id="FilterFly">
+		<div class="logo"><%= image_tag('ffLogo.png') %></div>
+	</div>
+	<div class="shopify">
+		<div class="shopifyImg"><%= image_tag('shopify-partner.png') %></div>
+	</div>
+	<div id="cofc">
+		<div class="cofcImg"><%= image_tag('CofClogo.png') %>
+		</div>
 	</div>
 </div>
 
 <div id="skills">
-	<p>Skills</p>
-	<div id="list">
-		<table>
-			<tr>
-				<td>HTML5</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>CSS/SCSS</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Ruby on Rails</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>jQuery</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Javascript</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Command Line</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Git Repository</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Sketch 3</td>
-				<td><%= image_tag('5stars.png') %></td>
-			</tr>
-		</table>
-		<table class="rightTbl">
-			<tr>
-				<td>MySQL</td>
-				<td><%= image_tag('4stars.png') %></td>
-			</tr>
-			<tr>
-				<td>JSON</td>
-				<td><%= image_tag('4stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Bootstrap</td>
-				<td><%= image_tag('4stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Liquid</td>
-				<td><%= image_tag('4stars.png') %></td>
-			</tr>
-			<tr>
-				<td>PHP</td>
-				<td><%= image_tag('3stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Angular</td>
-				<td><%= image_tag('3stars.png') %></td>
-			</tr>
-			<tr>
-				<td>XML</td>
-				<td><%= image_tag('2stars.png') %></td>
-			</tr>
-			<tr>
-				<td>Python</td>
-				<td><%= image_tag('1star.png') %></td>
-			</tr>
-		</table>
-	
-
-	</div>
-
+	<h1>Skills</h1>
+	<%= render 'pages/skillTable' %>
+	<div class="github">
+		<%= link_to "https://github.com/tfogg2/Tfogg", target: :_blank do %>
+	  		<%= image_tag('tfoggGithub.png') %>     
+		<% end %>
+	</div>  
 </div>
 <div id="contact">
-	<h1>Contact</h1>
+	<h1>Say Hello</h1>
 
-	
+	<%= render 'contacts/form' %>
 
 </div>
 
+<footer id="footer">
+	<div class="email-link"><%= mail_to "Thomas@tfogg.com" %></div>
+	<div class="instagram">
+		<%= link_to "https://www.instagram.com/tfogg2/", target: :_blank do %>
+			<%= image_tag('insta.png') %>
+		<%- end %>
+	</div>
+</footer>
 
 
 

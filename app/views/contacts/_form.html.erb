@@ -1,8 +1,10 @@
+
 <div id="contactForm">
 	<%= simple_form_for @contact do |f| %>
-	  <%= f.input :name %>
-	  <%= f.input :email %>
-	  <%= f.input :message %>
-	  <%= f.button :submit %>
-	<% end %>
+	  <%= f.input :name, placeholder: "Michael Smith", :required => true %>
+	  <%= f.input :email, placeholder: "example@gmail.com", :required => true %>
+	  <%= f.input :message, as: :text, placeholder: "'Ello mate", :required => true %>
 </div>
+	  <div class="submit"><%= f.button :submit, "Send" %></div>
+	<% end %>
+
