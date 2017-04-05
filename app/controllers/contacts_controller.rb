@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
       if @contact.deliver
       	flash.now[:error] = nil
       	flash.now[:notice] = 'Thank you for your message!'
-      	redirect_to '/'
+      	redirect_to '/', notice: 'Thank you for your message!'
       else
       	flash.now[:error] = 'Cannot send message.'
       	redirect_to '/'
