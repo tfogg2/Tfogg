@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
       	flash.now[:notice] = 'Thank you for your message!'
       	redirect_to '/', notice: 'Thank you for your message!'
       else
-      	flash.now[:error] = 'Cannot send message.'
+      	flash.now[:error] = "Something's not right here..."
       	redirect_to '/'
    	  end
 	end
