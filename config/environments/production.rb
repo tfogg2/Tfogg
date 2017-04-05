@@ -54,8 +54,8 @@ Tfogg::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'example.com',
-    user_name:            ENV['gmail_username'],
-    password:            ENV['gmail_password'],
+    user_name:            '<username>',
+    password:             '<password>',
     authentication:       'plain',
     enable_starttls_auto: true  }
   # Prepend all log lines with the following tags.
