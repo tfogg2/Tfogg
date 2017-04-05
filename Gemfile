@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '~> 4.2.1'
 
 # Use sqlite3 as the database for Active Record
 group :production do
@@ -14,7 +14,9 @@ end
 # 	# Use sqlite3 as the database for Active Record
 # 	gem 'sqlite3'
 # end
+gem 'puma', '~> 3.0'
 gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -24,7 +26,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-gem 'mail_form', '~> 1.5.0'
+gem 'mail_form', '~> 1.6.0'
+
+gem 'mail'
+gem 'postmark'
+gem 'postmark-rails', '>= 0.10.0'
 
 
 gem 'simple_form'

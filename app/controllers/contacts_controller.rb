@@ -1,11 +1,7 @@
 class ContactsController < ApplicationController
 	def new
 		@contact = Contact.new
-		if Contact.new
-    		Contact.new(params[:contact]).deliver
-   		else
 
-   		end
 	end 
 
 	def create
@@ -22,6 +18,6 @@ class ContactsController < ApplicationController
 	end
 
 	def contact_params
-      params.require(:contact).permit(:message, :to_email, :email, :name)
+      params.require(:contact).permit(:message, :to_email, :email, :name, :from_email)
     end
 end

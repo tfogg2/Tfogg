@@ -10,6 +10,9 @@ Bundler.require(:default, Rails.env)
 module Tfogg
   class Application < Rails::Application
 
+    config.action_mailer.delivery_method   = :postmark
+    config.action_mailer.postmark_settings = { :api_token => ENV['POSTMARK_API_TOKEN'] }
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
