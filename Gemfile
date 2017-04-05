@@ -6,14 +6,15 @@ gem 'rails', '4.0.1'
 # Use sqlite3 as the database for Active Record
 group :production do
 	# Use Postgres as the database for Active Record
-	gem 'pg'
+	# gem 'pg'
 	gem 'rails_12factor', group: :production
 end
 
-group :test, :development do
-	# Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
-end
+# group :test, :development do
+# 	# Use sqlite3 as the database for Active Record
+# 	gem 'sqlite3'
+# end
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
