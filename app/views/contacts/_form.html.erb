@@ -3,7 +3,7 @@
 	<%= simple_form_for @contact do |f| %>
 	  <%= f.input :name, placeholder: "Adam Sandler", :required => true %>
 	  <%= f.input :email, placeholder: "happygilmore@gmail.com", :required => true %>
-	  <%= f.input :message, as: :text, placeholder: "“Why didn't you just go HOME? That's your HOME! Are you too good for your HOME? ANSWER ME!” — Happy Gilmore", :required => true %>
+	  <%= f.input :message, as: :text, placeholder: "“Why didn't you just go HOME? That's your HOME! Are you too good for your HOME?” — Happy Gilmore", :required => true %>
 </div>
 	  <div class="submit"><%= f.button :submit, "Send" %></div>
 	<% end %>
