@@ -215,6 +215,11 @@ a:hover{
 	margin: 20px auto 0 auto;
 	font-weight: 200;
 }
+.github a:hover{
+	background: #fff;
+	color: #4990E2;
+
+}
 #contact{
 	height: 550px;
 	width: 100%;
