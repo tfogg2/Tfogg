@@ -343,8 +343,8 @@ a:hover{
 	width: 40px;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #161616;
-    opacity: .7 ;
+    color:    #888;
+    opacity: .4 ;
 }
 /*flash*/
 
