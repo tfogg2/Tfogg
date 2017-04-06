@@ -342,6 +342,10 @@ a:hover{
 	height: 40px;
 	width: 40px;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #161616;
+    opacity: .7 ;
+}
 /*flash*/
 
 .alert-error {
