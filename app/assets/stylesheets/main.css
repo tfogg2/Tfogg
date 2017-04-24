@@ -86,8 +86,9 @@ a:hover{
 	text-align: left;
 	margin: 10px auto;
 	width: 75%;
-	height: 270px;
-	padding-top: 2px;
+	/*height: 270px;*/
+	height: 400px;
+	padding-top: 55px;
 }
 .content h1{
 	text-align: center;
@@ -177,10 +178,10 @@ a:hover{
 }
 #skills{
 	color: black;
-	height: 430px;
+	height: 550px;
 	width: 100%;
 	background: #fff;
-	padding-top: 20px;
+	padding-top: 75px;
 	
 }
 #list{
