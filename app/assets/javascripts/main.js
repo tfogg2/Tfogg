@@ -18,19 +18,19 @@ $(document).ready( function(){
 
 	});
 
-	
+
     $(document).on("scroll", onScroll);
-    
+
     //smoothscroll
 	    $('a[href^="#"]').on('click', function (e) {
 	        e.preventDefault();
 	        $(document).off("scroll");
-	        
+
 	        $('li').each(function () {
 	            $(this).removeClass('selected');
 	        });
-	    	$(this).addClass('selected');    	
-	      
+	    	$(this).addClass('selected');
+
 	        var target = this.hash,
 	            menu = target;
 	        $target = $(target);
@@ -49,7 +49,7 @@ $(document).ready( function(){
 	        var currLink = $(this);
 
 	        var refElement = $(currLink.attr('href'));
-	
+
 	        if (refElement.position().top-300 <= scrollPos && refElement.position().top-300 + refElement.height() > scrollPos) {
 	            $('#top-bar ul a').removeClass("selected");
 	            currLink.addClass("selected");
@@ -59,8 +59,27 @@ $(document).ready( function(){
 	        }
 	    });
 	}
+	$('.ff-info').hide();
+	$('.ff-img').mouseenter(function(){
+		$('.ff-info').show();
+		$(this).mouseleave(function(){
+			$('.ff-info').hide();
+		});
+	});
+	$('.dash-info').hide();
+	$('.freedash-img').mouseenter(function(){
+		$('.dash-info').show();
+		$(this).mouseleave(function(){
+			$('.dash-info').hide();
+		});
+	});
 
-	
+	$('.project-hover').mouseenter(function(){
+		$(this).addClass('hover');
+		$(this).mouseleave(function(){
+			$(this).removeClass("hover");
+		});
+	});
 
 
 

@@ -4,7 +4,7 @@
   <title>Tfogg</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
 	  <link href="https://fonts.googleapis.com/css?family=Lato:100i,400" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,600i" rel="stylesheet">
 
@@ -13,17 +13,34 @@
 </head>
 <body>
 
-		</nav> 
+		</nav>
 	<div id="top-bar">
-		<ul id="top-menu">
-				<!-- <a href="#about"><li class="menu-item"><%# image_tag("about.png") %></li></a> -->
-				<a href="#portfolio"><li class="menu-item"><%= image_tag("portfolio.png") %></li></a>
-				<a href="#skills"><li class="menu-item"><%= image_tag("resume.png") %></li></a>
-				<a href="#contact"><li class="menu-item"><%= image_tag("contact.png") %></li></a>
-				
-		</ul>
+    <h1>Thomas Fogg</h1>
+
+    <div class="social-nav top-social">
+      <%= link_to "https://www.facebook.com/thomas.fogg.7", target: :_blank do %>
+        <%= image_tag('Facebook_Black.svg') %>
+      <% end %>
+      <%=link_to "https://github.com/tfogg2", target: :_blank do %>
+        <%= image_tag('Github_Black.svg') %>
+      <% end %>
+      <%=link_to "https://www.instagram.com/tfogg2/", target: :_blank do %>
+        <%= image_tag('Instagram_Black.svg') %>
+      <% end %>
+      <%=link_to "https://www.linkedin.com/in/thomas-fogg-95a88313b/", target: :_blank do %>
+        <%= image_tag('LinkedIN_Black.svg') %>
+      <% end %>
+    </div>
+
+		<!-- <ul id="top-menu">
+				<a href="#about"><li class="menu-item"><%# image_tag("about.png") %></li></a>
+				<a href="#portfolio"><li class="menu-item"><%# image_tag("portfolio.png") %></li></a>
+				<a href="#skills"><li class="menu-item"><%# image_tag("resume.png") %></li></a>
+				<a href="#contact"><li class="menu-item"><%# image_tag("contact.png") %></li></a>
+
+		</ul> -->
 	</div>
-		
+
 
 
 	<%= yield %>

@@ -3,8 +3,7 @@
 	<%= simple_form_for @contact do |f| %>
 	  <%= f.input :name, placeholder: "Michael Smith", :required => true %>
 	  <%= f.input :email, placeholder: "msmith@gmail.com", :required => true %>
-	  <%= f.input :message, as: :text, placeholder: "'Ello Mate", :required => true %>
+	  <%= f.input :message, as: :text, placeholder: "Hello", :required => true %>
 </div>
 	  <div class="submit"><%= f.button :submit, "Send" %></div>
 	<% end %>
-

@@ -1,0 +1,91 @@
+
+
+
+.home-cover
+
+  .home
+    .name_container
+      h1 Thomas Fogg
+
+
+    = link_to '#portfolio' do
+      /.arrow
+
+#cover-quote
+  h1 On a mission to do big things with remarkable people.
+
+
+#portfolio
+  .work
+    = image_tag('work-icon.svg')
+    h1 Work
+    p Below are a few of my favorite projects
+  .projects
+    #FilterFly
+      .ff-img.project-hover
+        .logo = image_tag('ff-logo.svg', class: "ff-logo")
+        .ff-info
+          h3 Filter Fly
+          p Filter Fly is a Shopify app that will allow online stores to better filter their products and by doing so, create a better overall experience for their customers.
+
+    #Cj
+      .cj-img.project-hover
+        = image_tag('example-img.jpg')
+    #FreeDash
+      .freedash-img.project-hover
+        = image_tag('FD.png')
+        .dash-info
+          h3 FreeDash.io
+          p Freedash lets freelance developers create, manage and share projects from one simple dashboard.
+          = link_to "http://freedash.io", target: "_blank" do
+            button.dash-btn Freedash
+          end
+
+/#past-work
+/  h1 Skills
+
+
+
+
+
+#skills
+  .skill
+    = image_tag('skills-icon.svg')
+    h1 Skills
+    p These are a few things I'm good at. Feel free to checkout tfogg.com on github.
+  .skill-box
+   = render 'pages/skillTable'
+   .github
+  		= link_to "https://github.com/tfogg2/Tfogg", target: :_blank do
+  	  		button.git Tfogg.com on GitHub
+  		end
+
+#about
+  .about-box
+    = image_tag('book-icon.svg')
+    h1 About
+    p These are a few things I'm good at. Feel free to checkout tfogg.com on github. These are a few things I'm good at. Feel free to checkout tfogg.com on github. These are a few things I'm good at. Feel free to checkout tfogg.com on github.
+
+
+#contact
+ h1 Say Hello
+
+ = render 'contacts/form'
+
+
+
+#footer
+	 /.email-link = mail_to "foggts@g.cofc.edu"
+	 .social-nav
+      = link_to "https://www.facebook.com/thomas.fogg.7", target: :_blank do
+        = image_tag('Facebook_White.svg')
+      end
+      = link_to "https://github.com/tfogg2", target: :_blank do
+        = image_tag('Github_White.svg')
+      end
+      = link_to "https://www.instagram.com/tfogg2/", target: :_blank do
+        = image_tag('Instagram_White.svg')
+      end
+      = link_to "https://www.linkedin.com/in/thomas-fogg-95a88313b/", target: :_blank do
+        = image_tag('LinkedIN_White.svg')
+      end

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" stroke="#20818D">
+            <path d="M3.43600201,9.6832784 L7.80909549,11.5574613" id="Line-9" stroke-linecap="square"></path>
+            <path d="M3.43600201,14.6810995 L7.80909549,16.5552824" id="Line-9" stroke-linecap="square"></path>
+            <path d="M15.3058272,9.6832784 L19.6789206,11.5574613" id="Line-9" stroke-linecap="square" transform="translate(17.492374, 10.620370) scale(1, -1) translate(-17.492374, -10.620370) "></path>
+            <path d="M15.3058272,14.6810995 L19.6789206,16.5552824" id="Line-9" stroke-linecap="square" transform="translate(17.492374, 15.618191) scale(1, -1) translate(-17.492374, -15.618191) "></path>
+            <path d="M0.5,0.729399578 L0.5,18.9503836 L11.0552908,23.3885282 L11.0552908,4.81062301 L0.5,0.729399578 Z" id="Rectangle-2"></path>
+            <path d="M12.0330992,23.4291564 L22.3003883,19.3343973 L22.3003883,0.737405542 L11.7503097,4.94033605 L12.0330992,23.4291564 Z" id="Rectangle-2"></path>
+        </g>
+    </g>
+</svg>
