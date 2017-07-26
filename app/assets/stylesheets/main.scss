@@ -5,6 +5,9 @@ h1{
 	-webkit-font-smoothing: antialiased;
 	font-family: Open Sans,open-sans,sans-serif;
 }
+button{
+	outline: none;
+}
 #notice{
   line-height: 2.5;
   margin-top: 1px;
@@ -117,7 +120,7 @@ h1{
 	line-height: 2;
 	margin: 0 auto;
 	color: white;
-	padding-top: 8%;
+	padding-top: 10%;
 }
 .name_container h1{
 	font-size: 120px;
@@ -154,14 +157,14 @@ a:hover{
 }
 #about{
 	height: 450px;
-	width: 80%;
-	border-top: 1px solid #e0e0e0;
-	padding-top: 50px;
-	background: #fff;
+	width: 100%;
+	background: url('about-bg.svg') repeat-x;
 	margin: 0 auto;
 }
 .about-box{
-	width: 100%;
+	width: 80%;
+	border-top: 1px solid #e0e0e0;
+	padding-top: 50px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -300,6 +303,7 @@ a:hover{
 	background: url('bg-right.png');
 	background-size: cover;
 }
+
 .cj-img img{
 	width: 400px;
 	height: 320px;
@@ -421,7 +425,13 @@ a:hover{
 	/*box-shadow: inset 0px 1px 2px rgba(0,0,0,0.9);*/
 	padding-left: 56px;
 }
-
+#list img:hover{
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	-webkit-transition: transform .2s ease-in-out;
+}
 #skills table{
 	height: 160px;
 	list-style: none;
@@ -468,11 +478,11 @@ a:hover{
 	background-attachment: fixed; */
 	text-align: center;
 	color: white;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 #contact h1{
-	font-weight: 100;
-	font-size: 50px;
+	font-weight: 600;
+	font-size: 36px;
 }
 #contactForm{
 	width: 520px;
@@ -482,10 +492,12 @@ a:hover{
 	display: block;
 }
 #new_contact .activeInput input{
-	border: 1px solid #14535B;
+	outline:  none;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,.8);
 }
 #new_contact textarea:focus{
-	border: 1px solid #14535B;
+	outline: none;
+	box-shadow: inset 0px 0 5px rgba(0,0,0,.8);
 }
 #contactForm input{
 	width: 280px;
@@ -495,6 +507,7 @@ a:hover{
 	display: inline-block;
 	margin: 10px auto;
 	padding: 10px;
+	color: white;
 
 }
 #contactForm textarea{
@@ -505,6 +518,7 @@ a:hover{
 	display: inline-block;
 	margin: 10px auto;
 	padding: 10px;
+	color: white;
 }
 #contactForm label{
 	display: inline-block;
@@ -516,6 +530,8 @@ a:hover{
 	opacity: .9;
 	font-weight: 100;
 	letter-spacing: 1.5px;
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,open-sans,sans-serif;
 }
 #contactForm abbr{
 	display: none;
@@ -527,16 +543,16 @@ a:hover{
 	margin-top: 45px;
 }
 #contactForm .activeInput input{
-	background: #4C949E;
+	// background: #4C949E;
 	color: white;
 	border: none;
 	// border: 1px solid #14535B;
 }
-input:focus{
+.activeInput #contact_name{
 
 }
 #contactForm .activeInput textarea{
-	background: #4C949E;
+	// background: #4C949E;
 	color: white;
 	border-color: #14535B;
 }
@@ -551,13 +567,13 @@ input:focus{
 	font-size: 20px;
 	letter-spacing: 2px;
 	color: white;
-	background: #4C949E;
+	background: none;
 	margin: 15px auto;
-	border: none;
+	border: 1px solid white;
 }
 .submit input:hover{
 	background: #fff;
-	color: #4C949E;
+	color: #000;
 
 }
 .input{
@@ -594,7 +610,7 @@ input:focus{
 .social-nav.top-social img{
 	height: auto;
 	width: auto;
-	opacity: .23;
+	opacity: .2;
 }
 .social-nav.top-social img:hover{
 	opacity: 1;
@@ -659,4 +675,69 @@ color: #b94a48;
 text-align: center;
 height: 20px;
 width: 100%;
+}
+
+
+/* NAV */
+
+
+/* Fill up */
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: right;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+.dotstyle-fillup li a {
+	overflow: hidden;
+	background-color: rgba(0,0,0,0);
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
+	transition: background 0.3s;
+}
+
+.dotstyle-fillup li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1px #fff;
+	transition: height 0.3s;
+}
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.dotstyle-fillup li.current a::after {
+	height: 100%;
 }

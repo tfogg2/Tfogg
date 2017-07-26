@@ -73,6 +73,18 @@ $(document).ready( function(){
 			$('.dash-info').hide();
 		});
 	});
+	$('.cj-info').hide();
+	$('.cj-pic-dark').hide();
+	$('.cj-img').mouseenter(function(){
+		$('.cj-info').show();
+		$('.cj-pic').hide();
+		$('.cj-pic-dark').show();
+		$(this).mouseleave(function(){
+			$('.cj-info').hide();
+			$('.cj-pic-dark').hide();
+			$('.cj-pic').show();
+		});
+	});
 
 	$('.project-hover').mouseenter(function(){
 		$(this).addClass('hover');

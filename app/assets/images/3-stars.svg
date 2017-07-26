@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="13px" viewBox="0 0 83 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="77.1845545 10.032615 73.3803284 12.9799382 74.7158409 8.26128808 71 5.60233106 75.8010536 5.17261929 77.1845545 1 78.9068989 5.17261929 83.0263774 5.60233106 79.4100493 8.26128808 80.9887806 12.9799382"></polygon>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.04" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0.04" dy="0.04" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="60.1845545 10.032615 56.3803284 12.9799382 57.7158409 8.26128808 54 5.60233106 58.8010536 5.17261929 60.1845545 1 61.9068989 5.17261929 66.0263774 5.60233106 62.4100493 8.26128808 63.9887806 12.9799382"></polygon>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.04" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0.04" dy="0.04" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="43.1845545 10.032615 39.3803284 12.9799382 40.7158409 8.26128808 37 5.60233106 41.8010536 5.17261929 43.1845545 1 44.9068989 5.17261929 49.0263774 5.60233106 45.4100493 8.26128808 46.9887806 12.9799382"></polygon>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.04" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0.04" dy="0.04" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="26.1845545 10.032615 22.3803284 12.9799382 23.7158409 8.26128808 20 5.60233106 24.8010536 5.17261929 26.1845545 1 27.9068989 5.17261929 32.0263774 5.60233106 28.4100493 8.26128808 29.9887806 12.9799382"></polygon>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="0.04" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0.04" dy="0.04" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <polygon id="Star" fill="#20818D" points="7 9.53970746 3.19577393 12.4870306 4.53128642 7.76838055 0.815445501 5.10942353 5.61649912 4.67971176 7 0.50709247 8.72234436 4.67971176 12.8418229 5.10942353 9.22549477 7.76838055 10.8042261 12.4870306"></polygon>
+            <g id="Star">
+                <use fill="#E0E0E0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+            <g id="Star">
+                <use fill="#E0E0E0" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            </g>
+            <g id="Star">
+                <use fill="#20818D" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+            </g>
+            <g id="Star">
+                <use fill="#20818D" fill-rule="evenodd" xlink:href="#path-7"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+            </g>
+        </g>
+    </g>
+</svg>

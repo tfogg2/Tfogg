@@ -1,6 +1,5 @@
 
 
-
 .home-cover
 
   .home
@@ -19,7 +18,7 @@
   .work
     = image_tag('work-icon.svg')
     h1 Work
-    p Below are a few of my favorite projects
+    p Below are a few of my favorite projects.
   .projects
     #FilterFly
       .ff-img.project-hover
@@ -30,7 +29,11 @@
 
     #Cj
       .cj-img.project-hover
-        = image_tag('example-img.jpg')
+        = image_tag('cj-boat.png', class:'cj-pic')
+        = image_tag('cj-boat-dark.png', class:'cj-pic-dark')
+    /  .cj-info
+    /    h3 CjAllembert.com
+    /    p Photography portfolio
     #FreeDash
       .freedash-img.project-hover
         = image_tag('FD.png')
@@ -52,7 +55,8 @@
   .skill
     = image_tag('skills-icon.svg')
     h1 Skills
-    p These are a few things I'm good at. Feel free to checkout tfogg.com on github.
+    p These are a few things I'm good at.
+  /  Feel free to checkout tfogg.com on github.
   .skill-box
    = render 'pages/skillTable'
    .github
@@ -64,10 +68,10 @@
   .about-box
     = image_tag('book-icon.svg')
     h1 About
-    p Write something momentous
+    p Write something momentous.
 
 #contact
- h1 Say Hello
+ h1 Contact
 
  = render 'contacts/form'
 
