@@ -228,7 +228,7 @@ a:hover{
   text-align: center;
   font-weight: 100;
   margin: 100px auto;
-  width: 500px;
+  width: 5000px;
 }
 #FilterFly, #FreeDash, #Cj{
 	width: 370px;
@@ -280,6 +280,12 @@ a:hover{
 	font-size: 36px;
 	margin: 10px auto;
 }
+.cj-info h3{
+	-webkit-font-smoothing: antialiased;
+	font-family: Open Sans,open-sans,sans-serif;
+	font-size: 36px;
+	margin: 10px auto;
+}
 .freedash-img a{
 	text-decoration: none;
 }
@@ -290,6 +296,19 @@ a:hover{
 	font-weight: 600;
 	font-size: 14px;
 	letter-spacing: .5px;
+
+}
+.boat-img {
+	width: 400px;
+	height: 320px;
+	background: url('cj-boat.png');
+}
+.hover .boat-img{
+	background: url('cj-boat-dark.png');
+}
+.cj-info{
+	color: white;
+	padding-top: 120px;
 }
 .freedash-img{
 	background: url('bg-middle.png') no-repeat;
