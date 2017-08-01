@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
 	def create
 	    @contact = Contact.new(params[:contact])
 	    @contact.request = request
+			
 			respond_to do |format|
 	      if @contact.deliver
 					format.html { redirect_to root_path, notice: 'Thank you for your message!'  }

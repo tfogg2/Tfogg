@@ -93,6 +93,13 @@ $(document).ready( function(){
 		});
 	});
 
+	var notice = document.getElementById('notice');
+	$(notice).on('click', function(){
+		$(this).hide();
+	});
+	$(window).on('click', function(event) {
+		$(notice).hide();
+	});
 
 
 
