@@ -1,10 +1,13 @@
-<%= render 'contacts/form' %>
-<div>
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
-    </div>
-  <% end %>
+<div id="contact">
+  <h1> Contact</h1>
+  <%= render 'contacts/form' %>
+  <div>
+    <% flash.each do |key, value| %>
+      <div>
+        <a href="#" data-dismiss="alert">×</a>
+          <%= value %>
+      </div>
+    <% end %>
 
+  </div>
 </div>
