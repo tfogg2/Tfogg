@@ -174,7 +174,17 @@ a:hover{
 	text-align: center;
 	margin: 0 auto;
 }
-
+.photography{
+	height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photography img{
+	width: 100%;
+}
 #about h1{
 	font-weight: 600;
 	margin-bottom: 30px;
