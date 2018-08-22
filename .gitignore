@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 sendgrid.env
+
+/config/initializers/secret_token.rb
