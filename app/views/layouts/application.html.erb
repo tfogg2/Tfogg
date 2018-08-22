@@ -13,10 +13,8 @@
 </head>
 <body>
 
-		</nav>
 	<div id="top-bar">
     <h1><%= link_to "Thomas Fogg", root_path %></h1>
-
     <div class="social-nav top-social">
       <%# link_to "https://www.facebook.com/thomas.fogg.7", target: :_blank do %>
         <%# image_tag('Facebook_Black.svg') %>
@@ -31,6 +29,7 @@
         <%= image_tag('LinkedIN_Black.svg') %>
       <% end %>
     </div>
+  </div>
 
 
 
@@ -44,11 +43,24 @@
 				<a href="#contact"><li class="menu-item"><%# image_tag("contact.png") %></li></a>
 
 		</ul> -->
-	</div>
 
 
+  <div class="new-site">
+    <h1> New tfogg.com <br/> Coming Soon </h1>
 
-	<%= yield %>
+    <div class="new-site-links">
+      <%=link_to "https://github.com/tfogg2", target: :_blank do %>
+        <%= image_tag('Github_White.svg') %>
+      <% end %>
+      <%=link_to "https://www.instagram.com/tfogg2/", target: :_blank do %>
+        <%= image_tag('Instagram_White.svg') %>
+      <% end %>
+      <%=link_to "https://www.linkedin.com/in/thomas-fogg-95a88313b/", target: :_blank do %>
+        <%= image_tag('LinkedIN_White.svg') %>
+      <% end %>
+    </div>
+  </div>
+	<%# yield %>
 
 
 	<script   src="http://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
